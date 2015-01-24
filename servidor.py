@@ -2,7 +2,7 @@
 __author__ = 'jesus.pedro.gutierrez.almazan'
 from flask import Flask
 from c2 import e1_servidor
-from tools import get_source_lines
+from tools.utils import get_source_lines
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
