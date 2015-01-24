@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="static/js/shCore.js"></script>
+		<script type="text/javascript" src="static/js/shBrushPython.js"></script>
+		<link href="static/css/shCore.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+		
+		<link href="static/css/styles.css" rel="stylesheet" type="text/css" />
+		
+		<title>Curso de python para Vocento</title>
+	</head>
+	<body>
+		<div class=page>
+		  {% block body %}
+			{% for codelines, result in template_vars['results'] %}
+				
+				<pre class="brush: python">{% for codeline in codelines %}{{ codeline }}{% endfor %}</pre>
+				{% for n_result in result %}
+					<pre class="brush: python">>> {{ n_result }}</pre>
+				{% endfor %}
+				
+			{% endfor %}
+		  {% endblock %}
+		</div>
+		<script type="text/javascript">
+		     SyntaxHighlighter.all()
+		</script>
+	</body>
+</html>
