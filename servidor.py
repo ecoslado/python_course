@@ -48,7 +48,7 @@ def show_code(chapter, example):
         results = [(codigo, resultado)]
 
     except Exception as e:
-        codigo = repr(e)
+        codigo = "Error al cargar página. %s" % repr(e)
         results = list()
 
     return render_template("c2_servidor.html", template_vars={'results': results})
