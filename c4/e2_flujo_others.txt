@@ -1,0 +1,63 @@
+if True:
+    pass
+
+for i in range(10):
+    if i == 5:
+        continue
+    print i
+print i
+
+>> 0
+>> 1
+>> 2
+>> 3
+>> 4
+>> 6
+>> 7
+>> 8
+>> 9
+>> 9
+
+for i in range(10):
+    if i == 5:
+        break
+    print i
+print i
+
+>> 0
+>> 1
+>> 2
+>> 3
+>> 4
+>> 5
+
+for i in range(10):
+    if i == 5:
+        continue
+    print i
+else:
+    print 'colorin colorado'
+
+>> 0
+>> 1
+>> 2
+>> 3
+>> 4
+>> 6
+>> 7
+>> 8
+>> 9
+>> colorin colorado
+
+for i in range(10):
+    if i == 5:
+        break
+    print i
+else:
+    print 'colorin colorado'
+
+>> 0
+>> 1
+>> 2
+>> 3
+>> 4

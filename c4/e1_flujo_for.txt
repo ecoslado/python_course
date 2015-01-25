@@ -1,0 +1,20 @@
+knights = ['arturo', 'lancelot', 'robin', 'galahad', 'bedevere']
+for knight in knights:
+    print 'Yo soy %s' % knight.lower().capitalize()
+
+>> Yo soy Arturo
+>> Yo soy Lancelot
+>> Yo soy Robin
+>> Yo soy Galahad
+>> Yo soy Bedevere
+
+# Iterar sobre una secuencia no conlleva una copia
+# Al iterar sobre una slice se puede modificar la secuencia original
+# Si no se itera sobre un slice entramos en un bucle infinito
+# ya que se itera en orden de aparicion y se modifica la secuencia original
+for knight in knights[:]:
+    if knight.lower() == 'galahad':
+        knights.insert(0, knight)
+print knights
+
+>> ['galahad', 'arturo', 'lancelot', 'robin', 'galahad', 'bedevere']

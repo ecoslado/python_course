@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = 'jesus.pedro.gutierrez.almazan'
-from flask import Flask
+
 from c2 import e1_servidor
-from tools.utils import get_source_lines
-from c4 import e1_flujo, e2_flujo, e3_flujo
+
+from tools.utils import get_source_lines, get_file_contents
+
+from flask import Flask
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
@@ -16,27 +18,54 @@ def hello_world():
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
-@app.route('/c4/e1')
-def c4_e1_flujo():
-    codigo = get_source_lines(e1_flujo)
+@app.route('/flujo/if')
+def c4_e1_flujo_if():
+    codigo = get_file_contents('./python_course/c4/e1_flujo_if.txt')
     resultado = list()
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
-@app.route('/c4/e2')
-def c4_e2_flujo():
-    codigo = get_source_lines(e2_flujo)
+@app.route('/flujo/for')
+def c4_e1_flujo_for():
+    codigo = get_file_contents('./python_course/c4/e1_flujo_for.txt')
     resultado = list()
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
-@app.route('/c4/e3')
-def c4_3_flujo():
-    codigo = get_source_lines(e3_flujo)
+@app.route('/flujo/range')
+def c4_e1_flujo_range():
+    codigo = get_file_contents('./python_course/c4/e1_flujo_range.txt')
     resultado = list()
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
+@app.route('/flujo/while')
+def c4_e1_flujo_while():
+    codigo = get_file_contents('./python_course/c4/e1_flujo_while.txt')
+    resultado = list()
+    results = [(codigo, resultado)]
+    return render_template("c2_servidor.html", template_vars={'results': results})
+
+@app.route('/flujo/comprehension')
+def c4_e2_flujo_comprehension():
+    codigo = get_file_contents('./python_course/c4/e2_flujo_comprehension.txt')
+    resultado = list()
+    results = [(codigo, resultado)]
+    return render_template("c2_servidor.html", template_vars={'results': results})
+
+@app.route('/flujo/others')
+def c4_e2_flujo_others():
+    codigo = get_file_contents('./python_course/c4/e2_flujo_others.txt')
+    resultado = list()
+    results = [(codigo, resultado)]
+    return render_template("c2_servidor.html", template_vars={'results': results})
+
+@app.route('/flujo/generators')
+def c4_e2_flujo_generators():
+    codigo = get_file_contents('./python_course/c4/e2_flujo_generators.txt')
+    resultado = list()
+    results = [(codigo, resultado)]
+    return render_template("c2_servidor.html", template_vars={'results': results})
 
 if __name__ == '__main__':
     app.debug = True

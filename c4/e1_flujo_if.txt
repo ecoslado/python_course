@@ -1,0 +1,28 @@
+if True:
+    print 'es verdad'
+
+>> es verdad
+
+if False:
+    print 'es verdad'
+else:
+    print 'es falso'
+
+>> es falso
+
+knights = ['arturo', 'lancelot', 'robin', 'galahad', 'bedevere']
+if 'patsy' in knights:
+    print 'Patsy es un caballero.'
+else:
+    print 'Patsy no es un caballero.'
+
+>> Patsy no es un caballero
+
+if 'arturo' not in knights:
+    print 'Arturo no es un caballero'
+elif 'patsy' in knights:
+    print 'patsy es un caballero'
+else:
+    print 'Romani ite domum'
+
+Romani ite domum

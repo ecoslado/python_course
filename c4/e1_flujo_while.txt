@@ -1,0 +1,6 @@
+knights = ['arturo', 'lancelot', 'robin', 'galahad', 'bedevere']
+while knights[0] != 'bedevere':
+    del knights[0]
+print knights
+
+>> ['bedevere']
