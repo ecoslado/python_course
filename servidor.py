@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = 'jesus.pedro.gutierrez.almazan'
-from flask import Flask
+
 from c2 import e1_servidor
-from tools.utils import get_source_lines
-from c4 import e1_flujo, e2_flujo, e3_flujo
+
+from tools.utils import get_source_lines, get_file_contents
+
+from flask import Flask
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
@@ -18,23 +20,9 @@ def hello_world():
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
-@app.route('/c4/e1')
-def c4_e1_flujo():
-    codigo = get_source_lines(e1_flujo)
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/c4/e2')
-def c4_e2_flujo():
-    codigo = get_source_lines(e2_flujo)
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/c4/e3')
-def c4_3_flujo():
-    codigo = get_source_lines(e3_flujo)
+@app.route('/flujo/<example>')
+def c4_e1_flujo(example):
+    codigo = get_file_contents('./python_course/c4/flujo_%s.txt' % example)
     resultado = list()
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
@@ -52,7 +40,6 @@ def show_code(chapter, example):
         results = list()
 
     return render_template("c2_servidor.html", template_vars={'results': results})
-
 
 if __name__ == '__main__':
     app.debug = True
