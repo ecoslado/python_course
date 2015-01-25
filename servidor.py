@@ -20,44 +20,9 @@ def hello_world():
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
-@app.route('/flujo/if')
-def c4_e1_flujo_if():
-    codigo = get_file_contents('./python_course/c4/e1_flujo_if.txt')
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/flujo/for')
-def c4_e1_flujo_for():
-    codigo = get_file_contents('./python_course/c4/e1_flujo_for.txt')
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/flujo/range')
-def c4_e1_flujo_range():
-    codigo = get_file_contents('./python_course/c4/e1_flujo_range.txt')
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/flujo/while')
-def c4_e1_flujo_while():
-    codigo = get_file_contents('./python_course/c4/e1_flujo_while.txt')
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/flujo/comprehension')
-def c4_e2_flujo_comprehension():
-    codigo = get_file_contents('./python_course/c4/e2_flujo_comprehension.txt')
-    resultado = list()
-    results = [(codigo, resultado)]
-    return render_template("c2_servidor.html", template_vars={'results': results})
-
-@app.route('/flujo/others')
-def c4_e2_flujo_others():
-    codigo = get_file_contents('./python_course/c4/e2_flujo_others.txt')
+@app.route('/flujo/<example>')
+def c4_e1_flujo(example):
+    codigo = get_file_contents('./python_course/c4/flujo_%s.txt' % example)
     resultado = list()
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
