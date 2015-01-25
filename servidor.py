@@ -9,6 +9,8 @@ from flask import Flask
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
+from importlib import import_module
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -60,11 +62,18 @@ def c4_e2_flujo_others():
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
 
-@app.route('/flujo/generators')
-def c4_e2_flujo_generators():
-    codigo = get_file_contents('./python_course/c4/e2_flujo_generators.txt')
-    resultado = list()
-    results = [(codigo, resultado)]
+@app.route('/<chapter>/<example>')
+def show_code(chapter, example):
+    try:
+        module = import_module('%s.%s' % (chapter, example))
+        codigo = get_source_lines(module)
+        resultado = list()
+        results = [(codigo, resultado)]
+
+    except Exception as e:
+        codigo = repr(e)
+        results = list()
+
     return render_template("c2_servidor.html", template_vars={'results': results})
 
 if __name__ == '__main__':
