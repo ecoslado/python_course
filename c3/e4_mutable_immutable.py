@@ -1,4 +1,4 @@
-__author__ = 'kike'
+__author__ = 'Enrique Coslado'
 import copy
 from decimal import Decimal
 

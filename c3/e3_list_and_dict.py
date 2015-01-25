@@ -1,4 +1,4 @@
-__author__ = 'kike'
+__author__ = 'Enrique Coslado'
 
 from c3.e4_mutable_immutable import variable_info
 
