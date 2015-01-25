@@ -1,4 +1,4 @@
-__author__ = 'kike'
+__author__ = 'Enrique Coslado'
 import time
 
 def fib(n):

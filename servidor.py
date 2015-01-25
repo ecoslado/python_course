@@ -7,6 +7,8 @@ from c4 import e1_flujo, e2_flujo, e3_flujo
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
+from importlib import import_module
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -35,6 +37,20 @@ def c4_3_flujo():
     codigo = get_source_lines(e3_flujo)
     resultado = list()
     results = [(codigo, resultado)]
+    return render_template("c2_servidor.html", template_vars={'results': results})
+
+@app.route('/<chapter>/<example>')
+def show_code(chapter, example):
+    try:
+        module = import_module('%s.%s' % (chapter, example))
+        codigo = get_source_lines(module)
+        resultado = list()
+        results = [(codigo, resultado)]
+
+    except Exception as e:
+        codigo = repr(e)
+        results = list()
+
     return render_template("c2_servidor.html", template_vars={'results': results})
 
 

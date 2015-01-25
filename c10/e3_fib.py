@@ -1,4 +1,4 @@
-__author__ = 'kike'
+__author__ = 'Enrique Coslado'
 import time
 
 cache = dict()
@@ -10,10 +10,9 @@ def cached(function):
         return cache[key]
     return wrapper
 
-@cached
 def fib(n):
     return 1 if n < 2 else fib(n-1) + fib(n-2)
-
+fib = cached(fib)
 
 def main():
     init = time.clock()

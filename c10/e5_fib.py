@@ -1,12 +1,18 @@
 __author__ = 'Enrique Coslado'
 import time
-from c10.e4_cached import cached
-
-cache = dict()
 
 def fib(n):
-    return 1 if n < 2 else fib(n-1) + fib(n-2)
-fib = cached(cache)(fib)
+    f = 1
+    f1 = 1
+    f2 = 1
+    for i in range(n + 1):
+        if i > 1:
+            f = f1 + f2
+            f2 = f1
+            f1 = f
+
+    return f
+
 
 def main():
     init = time.clock()
@@ -16,7 +22,7 @@ def main():
     print "Time spent: %s seconds." % delta
 
     init = time.clock()
-    print fib(100)
+    print fib(1000)
     end = time.clock()
     delta = end - init
     print "Time spent: %s seconds." % delta
