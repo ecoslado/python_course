@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'jesus.pedro.gutierrez.almazan'
 
-<<<<<<< HEAD
 from c2 import servidor
-
-=======
->>>>>>> f8a536bd2975540a3e60d070f31629d1b423921a
 from tools.utils import get_source_lines, get_file_contents
 
 from flask import Flask
