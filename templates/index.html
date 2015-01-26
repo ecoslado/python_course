@@ -1,17 +1,20 @@
 {% extends "base.html" %}
 {% block body %}
-    <ul>
+
+
     {% for elem in index %}
-        <li>
-            {{ elem.title }}
-            <ul>
-                {% for subelem in elem["items"] %}
-                <li>
-                    <a href="{{ url_for('.show_code', chapter=subelem.chapter, example=subelem.example) }}"> {{ subelem.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </li>
+<div class="container">
+            <div style="border: solid 1px #ddd; border-radius: 2px; margin-bottom: 20px; padding-left: 10px;">
+                <h2>{{ elem.title }}</h2>
+                <ul class="list-unstyled">
+                    {% for subelem in elem["items"] %}
+                    <li class="">
+                        <a href="{{ url_for('.show_code', chapter=subelem.chapter, example=subelem.example) }}"> {{ subelem.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+</div>
     {% endfor %}
-    </ul>
+
 {% endblock %}
