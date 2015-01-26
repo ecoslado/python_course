@@ -61,3 +61,51 @@ else:
 >> 2
 >> 3
 >> 4
+
+def args_empty():
+    pass
+args_empty()
+
+def args_param(param1):
+    print param1
+args_param('hola')
+
+>> hola
+
+def args_named(name='John', movie='Rambo II'):
+    print name
+    print movie
+args_named(name='Silvester', movie='Cobra')
+
+>> Silvester
+>> Cobra
+
+def args_multiparam(*args):
+    print args
+args_multiparam('param1', 'param2', 'param3')
+
+>> ('param1', 'param2', 'param3')
+
+def args_namedparam(**kwargs):
+    print kwargs
+args_namedparam(name='John', alias='Rambo')
+
+>> {'alias': 'Rambo', 'name': 'John'}
+
+def args_mixedparams(*args, **kwargs):
+    print args
+    print kwargs
+args_mixedparams('usuario', 'pagina', name='John', alias='Rambo')
+
+>> ('usuario', 'pagina')
+>> {'alias': 'Rambo', 'name': 'John'}
+
+def args_mixedparams_2(categoria, *args, **kwargs):
+    print categoria
+    print args
+    print kwargs
+args_mixedparams_2('cine', 'hoycinema', '/rambo2.html', name='John', alias='Rambo', actor='Silvester Stallone')
+
+>> cine
+>> ('hoycinema', '/rambo2.html')
+>> {'alias': 'Rambo', 'name': 'John', 'actor': 'Silvester Stallone'}
