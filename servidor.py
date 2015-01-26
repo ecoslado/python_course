@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'jesus.pedro.gutierrez.almazan'
 
-from c2 import e1_servidor
-
 from tools.utils import get_source_lines, get_file_contents
 
 from flask import Flask
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
-import os
-from importlib import import_module
 import os
 
 app = Flask(__name__)
@@ -30,3 +26,4 @@ if __name__ == '__main__':
     app.config['SECRET_KEY'] = 'AhLae9chahKua5fuZia7ooji'
     toolbar = DebugToolbarExtension(app)
     app.run(host="0.0.0.0", port=5000)
+
