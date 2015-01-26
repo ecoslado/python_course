@@ -157,15 +157,18 @@ index = [
                 "title": "Simply decorated Fibonacci",
                 "chapter": "decorators",
                 "example": "simple_decorated_caching"
-            },{
+            },
+            {
                 "title": "Separated Cached Decorator",
                 "chapter": "decorators",
                 "example": "separated_cached_decorator"
-            },{
+            },
+            {
                 "title": "Separated Fibonacci",
                 "chapter": "decorators",
                 "example": "separated_fib"
-            },{
+            },
+            {
                 "title": "Iterative Fibonacci",
                 "chapter": "decorators",
                 "example": "iterated_fib"
