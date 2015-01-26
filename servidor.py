@@ -2,6 +2,7 @@
 __author__ = 'jesus.pedro.gutierrez.almazan'
 
 from tools.utils import get_source_lines, get_file_contents
+from index import index
 
 from flask import Flask
 from flask.templating import render_template
@@ -10,6 +11,11 @@ from flask_debugtoolbar import DebugToolbarExtension
 import os
 
 app = Flask(__name__)
+
+@app.route('/')
+def index_page():
+    print index
+    return render_template("index.html",  index=index)
 
 @app.route('/<chapter>/<example>')
 def show_code(chapter, example):

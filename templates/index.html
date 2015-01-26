@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+    <ul>
+    {% for elem in index %}
+        <li>
+            {{ elem.title }}
+            <ul>
+                {% for subelem in elem["items"] %}
+                <li>
+                    <a href="{{ url_for('.show_code', chapter=subelem.chapter, example=subelem.example) }}"> {{ subelem.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
