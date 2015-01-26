@@ -1,5 +1,5 @@
 __author__ = 'jesus.pedro.gutierrez.almazan'
-import c2.e1_servidor
+import c2.servidor
 from flask import Flask
 from tools.utils import get_source_lines
 from flask.templating import render_template
@@ -16,7 +16,7 @@ def hello_world():
     resultado es una lista con los resultados de la ejecucion del anterior codigo
     """
     # codigo es una lista de cadenas que representan lineas de codigo
-    codigo = get_source_lines(c2.e1_servidor)
+    codigo = get_source_lines(c2.servidor)
     
     # resultado es una lista con los resultados obtenidos en la ejecucion del codigo anterior
     resultado = list()

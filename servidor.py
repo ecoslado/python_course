@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'jesus.pedro.gutierrez.almazan'
 
+from c2 import servidor
 from tools.utils import get_source_lines, get_file_contents
 from index import index
 
@@ -14,8 +15,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index_page():
-    print index
     return render_template("index.html",  index=index)
+
 
 @app.route('/<chapter>/<example>')
 def show_code(chapter, example):
