@@ -10,3 +10,5 @@ foo()
 
 print(i, 'global')
 
+>>> (5, 'in foo()')
+>>> (1, 'global')

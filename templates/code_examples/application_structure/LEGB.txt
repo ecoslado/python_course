@@ -15,7 +15,12 @@ import math
 print(math.pi, 'from the math module')
 print(numpy.pi, 'from the numpy package')
 
+>>> (3.141592653589793, 'from the math module')
+>>> (3.141592653589793, 'from the numpy package')
+
+
 # LG
+###################################
 a_var = 'global variable'
 def a_func():
     print(a_var, '[ a_var inside a_func() ]')
@@ -23,7 +28,12 @@ def a_func():
 a_func()
 print(a_var, '[ a_var outside a_func() ]')
 
+>>> ('global variable', '[ a_var inside a_func() ]')
+>>> ('global variable', '[ a_var outside a_func() ]')
+
+
 # LEG
+####################################
 a_var = 'global value'
 
 def outer():
@@ -35,6 +45,9 @@ def outer():
 
     inner()
 outer()
+
+>>> local value
+
 
 a_var = 'global value'
 
@@ -52,7 +65,14 @@ outer()
 
 a_var = 'global variable'
 
+
+>>> ('outer before:', 'local value')
+>>> ('in inner():', 'inner value')
+>>> ('outer after:', 'inner value')
+
+
 # LEGB
+#####################################
 def len(in_var):
     print('called my len() function')
     l = 0
@@ -65,3 +85,6 @@ def a_func(in_var):
     print('Input variable is of length', len_in_var)
 
 a_func('Hello, World!')
+
+>>> called my len() function
+>>>('Input variable is of length', 13)

@@ -1,0 +1,83 @@
+__author__ = 'Enrique Coslado'
+
+from c3.e4_mutable_immutable import variable_info
+
+def from_second(any_list):
+    return any_list[1:]
+
+def till_penultimate(any_list):
+    return any_list[:-1]
+
+def string_keys(any_dict):
+    out = list()
+    for key in any_dict:
+        if type(key) == str:
+            out.append(key)
+    return out
+
+def value_with_string_keys(any_dict):
+    out = list()
+    for key, value in any_dict.items():
+        if type(key) == str:
+            out.append(value)
+    return out
+
+## alternate string_key
+def alter_string_keys(any_dict):
+    return [key for key in any_dict if type(key) == str]
+
+
+def main():
+    fruits = ["orange", "pear", "apple"]
+    mixed_dict = {"fruits": fruits, 2: "stuff", "foo": "bar"}
+
+    print "Fruits: %s" % fruits
+
+    >>> Fruits: ['orange', 'pear', 'apple']
+
+    print "Mixed dict: %s" % mixed_dict
+
+    >>> Mixed dict: {2: 'stuff', 'foo': 'bar', 'fruits': ['orange', 'pear', 'apple']}
+
+    print "Access to a list element: %s" % fruits[0]
+
+    >>> Access to a list element: orange
+
+    print "Access to a dict element: %s" % mixed_dict["fruits"]
+
+    >>> Access to a dict element: ['orange', 'pear', 'apple']
+
+    print "Two level access in mixed dict: %s" % mixed_dict["fruits"][0]
+
+    >>> Two level access in mixed dict: orange
+
+    print "Fruits from second element: %s" % from_second(fruits)
+
+    >>> Fruits from second element: ['pear', 'apple']
+
+    print "Fruits till penultimate element: %s" % till_penultimate(fruits)
+
+    >>> Fruits till penultimate element: ['orange', 'pear']
+
+    print "String keys in mixed dict: %s" % string_keys(mixed_dict)
+
+    >>> String keys in mixed dict: ['foo', 'fruits']
+
+    print "String keys in mixed dict with alternate method: %s" % alter_string_keys(mixed_dict)
+
+    >>> String keys in mixed dict with alternate method: ['foo', 'fruits']
+
+    print "Values with string keys in mixed dict: %s" % value_with_string_keys(mixed_dict)
+
+    >>> Values with string keys in mixed dict: ['bar', ['orange', 'pear', 'apple']]
+
+    print "By the way variable info for fruits: %s" % variable_info(fruits)
+
+    >>> By the way variable info for fruits: <type 'list'> variable with value ['orange', 'pear', 'apple'] is in address 139765852395712.
+
+    print "While variable info for mixed_dict['fruits']: %s" % variable_info(mixed_dict["fruits"])
+
+    >>> While variable info for mixed_dict['fruits']: <type 'list'> variable with value ['orange', 'pear', 'apple'] is in address 139765852395712.
+
+if __name__ == "__main__":
+    main()
