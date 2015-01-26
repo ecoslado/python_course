@@ -6,7 +6,7 @@ def main():
     print "time.clock(): %s" % time.clock()
     print "time.ctime(): %s" % time.ctime()
     print "time.daylight: %s" % time.daylight
-    print "time.sleep(2): %s" % time.sleep(2)
+    print "time.sleep(1): %s" % time.sleep(2)
     print "time.localtime(): %s" % time.localtime()
     print "time.mktime(time.localtime()): %s" % time.mktime(time.localtime())
     print "time.strftime('%%Y-%%m-%%d -> %%H:%%m:%%s'): %s" % time.strftime("%Y-%m-%d -> %H:%m:%s")
@@ -14,3 +14,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+>>> time.clock(): 0.01534
+>>> time.ctime(): Mon Jan 26 17:05:08 2015
+>>> time.daylight: 1
+>>> time.sleep(1): None
+>>> time.localtime(): time.struct_time(tm_year=2015, tm_mon=1, tm_mday=26, tm_hour=17, tm_min=5, tm_sec=10, tm_wday=0, tm_yday=26, tm_isdst=0)
+>>> time.mktime(time.localtime()): 1422288310.0
+>>> time.strftime('%Y-%m-%d -> %H:%m:%s'): 2015-01-26 -> 17:01:1422288310

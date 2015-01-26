@@ -1,0 +1,85 @@
+__author__ = 'Enrique Coslado'
+import copy
+from decimal import Decimal
+
+def variable_info(any_var):
+    return "%s variable with value %s is in address %s." % (type(any_var), any_var, id(any_var))
+
+def main():
+    a = 5
+    print variable_info(a)
+    a += 2
+    print "Added 2 to integer a"
+    print variable_info(a)
+
+    >>> <type 'int'> variable with value 5 is in address 12640504.
+    >>> Added 2 to integer a
+    >>> <type 'int'> variable with value 7 is in address 12640456.
+
+
+    b = "Hello"
+    print variable_info(b)
+    print "Appending world to string."
+    b += " world"
+    print variable_info(b)
+
+    >>> <type 'str'> variable with value Hello is in address 140518527455808.
+    >>> Appending world to string.
+    >>> <type 'str'> variable with value Hello world is in address 140518527504816.
+
+
+    c = list()
+    print variable_info(c)
+    print "Appending integer to the list."
+    c.append(a)
+    print variable_info(c)
+
+    >>> <type 'list'> variable with value [] is in address 140518527480896.
+    >>> Appending integer to the list.
+    >>> <type 'list'> variable with value [7] is in address 140518527480896.
+
+
+    c = Decimal("4.")
+    d = Decimal("5.")
+    print variable_info(c)
+    print "Adding 4. to decimal variable."
+    c += d
+    print variable_info(c)
+
+    >>> <class 'decimal.Decimal'> variable with value 4 is in address 140518527479152.
+    >>> Adding 4. to decimal variable.
+    >>> <class 'decimal.Decimal'> variable with value 9 is in address 140518505091152.
+
+
+    c = dict()
+    print variable_info(c)
+    print "Assigning bar to key foo."
+    c["foo"] = "bar"
+    print variable_info(c)
+
+    >>> <type 'dict'> variable with value {} is in address 140518504968832.
+    >>> Assigning bar to key foo.
+    >>> <type 'dict'> variable with value {'foo': 'bar'} is in address 140518504968832.
+
+
+    print "Simple copy of a dictionary."
+    print variable_info(c)
+    d = c
+    print variable_info(d)
+
+    >>> Simple copy of a dictionary.
+    >>> <type 'dict'> variable with value {'foo': 'bar'} is in address 140518504968832.
+    >>> <type 'dict'> variable with value {'foo': 'bar'} is in address 140518504968832.
+
+
+    print "Deep copy of a dictionary."
+    print variable_info(c)
+    d = copy.deepcopy(c)
+    print variable_info(d)
+
+    >>> Deep copy of a dictionary.
+    >>> <type 'dict'> variable with value {'foo': 'bar'} is in address 140518504968832.
+    >>> <type 'dict'> variable with value {'foo': 'bar'} is in address 140518504937184.
+
+if __name__ == "__main__":
+    main()
