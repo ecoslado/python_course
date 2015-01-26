@@ -9,6 +9,7 @@ from flask import Flask
 from flask.templating import render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
+import os
 from importlib import import_module
 
 app = Flask(__name__)
@@ -22,7 +23,7 @@ def hello_world():
 
 @app.route('/flujo/<example>')
 def c4_e1_flujo(example):
-    codigo = get_file_contents('./python_course/c4/flujo_%s.txt' % example)
+    codigo = get_file_contents('./c4/flujo_%s.txt' % example)
     resultado = list()
     results = [(codigo, resultado)]
     return render_template("c2_servidor.html", template_vars={'results': results})
