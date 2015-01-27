@@ -1,0 +1,50 @@
+Python es un lenguaje de programacion interpretado e interactivo de proposito general.
+Es, hasta cierto punto, comparable con otros lenguajes de programacion de dominio especifico que
+ podemos encontrar dentro del ambito de la Ingenieria como Matlab, Octave, R, SPSS o IDL.
+
+Se trata tambien de un lenguaje de programacion relativamente moderno y en constante, aunque moderada, renovacion.
+Fue creado por Guido van Rossum en el 1991 tomando prestadas muchas de las buenas ideas presentes 
+en los lenguajes de programacion que conocia.
+A diferencia de lo que viene siendo habitual, en vez de reinventar cada idea simplemente las incorporo de manera que tuvieran sentido.
+
+Aunque la mente de un holandes suele ser un sitio bastante complicado y retorcido consiguio crear un lenguaje sencillo, 
+intuitivo y facil de aprender.
+
+Dificilmente se es mas productivo con cualquier otro lenguaje de cuanto se es programando en Python.
+De hecho se suele decir: la vida es corta, por eso programo en Python.
+Quizas el unico lenguaje comparable a Python en ese sentido es Ruby, que curiosamente nacio de la mente de un japones; 
+tambien un sitio habitualmente complicado y retorcido.
+
+Python gozaba de cierta popularidad dentro del mundo UNIX porque se le consideraba una alternativa razonable a Perl, 
+el que era por aquel entonces el lenguaje de scripting para programacion de sistemas por antonomasia.
+La explosion de Python llego entre el 2003 y 2007 con el auge de las aplicaciones web y posteriormente con la nube.
+
+Es uno de los cuatro lenguajes oficiales de Google y toda la infraestructura de Youtube esta programada en Python.
+Permite a los desarrolladores de arquitecturas de servicios utilizar el mismo 
+lenguaje para la aplicacion (para lo que tambien se ha venido utilzando PHP, 
+como en el caso de Facebook), para el middleware y para la gestion de los equipos.
+Si bien Java es el lenguaje de las aburridas consultorias de sistemas y de las mastodonticas 
+multinacionales, Python es el lenguaje de las startups de Silicon Valley.
+
+Mas o menos mientras ganaba en popularidad entre los futuros empleados de Google, en algunos sectores del calculo cientifico 
+se lo veia como una mas que prometedora alternativa a Matlab.
+Matlab es en el fondo un lenguaje de programacion mediocre que sirve para juntar funciones realmente utiles.
+Python debia recorrer el sentido contrario: es un lenguaje de programacion singularmente atractivo para el que, hace poco tiempo, 
+no habia un contexto cientifico. Ni siquiera se creo pensando en el Calculo Numerico.
+
+Jim Hugunin puso la primera piedra del castillo, Numeric. No era mas que una clase para poder tratar arrays 
+n-dimensionales en Python y algunas rutinas numericas pero tenia serios problemas de velocidad en comparacion con Matlab.
+Tambien habia ciertos problemas de fragmentacion, cada centro de investigacion desarrollaba sus propias bibliotecas 
+de calculo y las compartia, pero no habia ningun lugar donde poder poner las cosas en comun.
+
+El punto de no retorno llego en el 2007 con numpy y scipy.
+Finalmente Python contaba con los bloques basicos para hacer Calculo Numerico, todos los usuarios 
+usaban el mismo y sabian donde compartir sus desarrollos.
+
+En enero de 2012, momento en el que escribo estas lineas, Python cuenta con una coleccion de recursos para 
+Ciencia equivalente a la de Matlab, incluso superior en campos como la visualizacion o el calculo simbolico.
+
+Y la gran mayoria de estos recursos son libres y gratuitos, sin problemas de royalties o de 
+abogados que intenten defender la propiedad intelectual de sus clientes.
+
+En resumen: Python es el futuro.

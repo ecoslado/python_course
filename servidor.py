@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'jesus.pedro.gutierrez.almazan'
 
-from c2 import servidor
-from tools.utils import get_source_lines, get_file_contents
+from tools.utils import get_file_contents
 from index import index
 
 from flask import Flask

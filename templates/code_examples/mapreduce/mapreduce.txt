@@ -1,0 +1,49 @@
+# MAP
+# map(aFunction, aSecuence, [aSecuence, ...])
+#
+# Queremos realizar una operacion sobre una lista de elementos
+items = [1, 2, 3, 4, 5]
+squared = []
+for x in items:
+	squared.append(x ** 2)
+
+squared
+>>> [1, 4, 9, 16, 25]
+
+
+# La funcion map realiza esta tarea de una manera simplificada
+items = [1, 2, 3, 4, 5]
+def sqr(x): return x ** 2
+list(map(sqr, items))
+
+>>> [1, 4, 9, 16, 25]
+
+# La funcion sqr anterior se sustituir por una funcion anonima (funcion lambda)
+list(map((lambda x: x **2), items))
+>>> [1, 4, 9, 16, 25]
+
+
+# Map puede recoger un numero arbitrario de parametros
+# Creara pares entre elementos pertencientes a los parametros y aplicara una funcion sobre dichos pares
+# Si no se indica una funcion, devuelve la tupla creada.
+m = [1,2,3]
+n = [1,4,9]
+map(None, m, n)
+>>> [(1, 1), (2, 4), (3, 9)]
+
+
+# FILTER
+# filter(aFunction or None, aSecuence)
+#
+# La funcion filter extrae elementos de una secuencia y 
+# devuelve aquellos que devuelvan Verdadero al aplicar una funcion sobre ellos
+a = [1,2,None,4,5,None,7,8,None]
+filter(None, a)
+>>> [1,2,4,5,7,8]
+
+# REDUCE
+# reduce(aFunction, aSecuence[, initial])
+#
+# La funcion reduce aplica una funcion sobre pares de elementos de una secuencia hasta dejar un solo valor.
+reduce( (lambda x, y: x * y), [1, 2, 3, 4] )
+>>> 24

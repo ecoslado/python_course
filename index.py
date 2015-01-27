@@ -5,11 +5,23 @@ from flask import url_for
 index = [
     {
         "title": "Introduction",
-        "items": []
+        "items": [
+            {
+                "title": "Que es Python",
+                "chapter": "introduccion",
+                "example": "introduccion"
+            }
+        ]
     },
     {
         "title": "Starting Flask Server",
-        "items": []
+        "items": [
+            {
+                "title": "Iniciando el servidor Flask",
+                "chapter": "servidor",
+                "example": "arrancar"
+            }
+        ]
     },
     {
         "title": "Basic types in Python",
@@ -39,7 +51,41 @@ index = [
     {
         "title": "Flow Managing",
         "items": [
-
+            {
+                "title": "Sentencia if",
+                "chapter": "flujo",
+                "example": "if"
+            },
+            {
+                "title": "Sentencia for",
+                "chapter": "flujo",
+                "example": "for"
+            },
+            {
+                "title": "Sentencia while",
+                "chapter": "flujo",
+                "example": "while"
+            },
+            {
+                "title": "Funcion range",
+                "chapter": "flujo",
+                "example": "range"
+            },
+            {
+                "title": "Otras sentencias",
+                "chapter": "flujo",
+                "example": "others"
+            },
+            {
+                "title": "'Comprension' de listas",
+                "chapter": "flujo",
+                "example": "comprehension"
+             },
+            {
+                "title": "Generadores",
+                "chapter": "flujo",
+                "example": "generators"
+            }
         ]
     },
     {
@@ -77,6 +123,16 @@ index = [
         "title": "Object Oriented Programming",
         "items": [
             {
+                "title": "Clases en Python",
+                "chapter": "object_oriented",
+                "example": "clases"
+            },
+            {
+                "title": "Herencia",
+                "chapter": "object_oriented",
+                "example": "herencia"
+            },
+            {
                 "title": "Basic Abstract Class",
                 "chapter": "object_oriented",
                 "example": "products"
@@ -91,6 +147,16 @@ index = [
                 "chapter": "object_oriented",
                 "example": "special_products"
             },
+            {
+                "title": "Atributos privados y muy privados",
+                "chapter": "object_oriented",
+                "example": "privated"
+            },
+            {
+                "title": "Ejercicio",
+                "chapter": "object_oriented",
+                "example": "ejercicio"
+            }
         ]
     },
     {
@@ -117,6 +183,11 @@ index = [
     {
         "title": "Some String Services",
         "items": [
+            {
+                "title": "Servicios de cadenas",
+                "chapter": "string_services",
+                "example": "re"
+            },
 
         ]
     },
@@ -175,6 +246,16 @@ index = [
             },
         ]
     },
+    {
+        "title": "Map and Reduce",
+        "items": [
+            {
+                "title": "Map",
+                "chapter": "mapreduce",
+                "example": "mapreduce"
+            }
+        ]
+    }
 
 ]
 

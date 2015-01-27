@@ -1,0 +1,12 @@
+class Clase(object):
+	# Atributo publico
+	publico = 'Soy un atributo publico :D'
+	
+	# Atributo privado, pero solo por convencion
+	_privado = 'Soy un atributo privado, pero no mucho'
+	
+	# Atributo muy privado, se modifica su nombre en el espacio de nombres
+	__muy_privado = 'Top Secret'
+
+dir(Clase)
+>>> ['_Clase__muy_privado', ... , '_privado', 'publico']

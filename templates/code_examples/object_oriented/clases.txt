@@ -1,0 +1,87 @@
+# Una clase vacia (como registro de C)
+class A(object):
+	"""
+	Documentacion clase A
+	"""
+	pass
+
+print A.__doc__
+>>> '\n    Documentacion clase A\n    '
+
+# Una clase con un atributo
+class A(object):
+	"""
+	Documentacion clase A
+	"""
+	attr = 'Soy un atributo'
+print A.attr
+>>> Soy un atributo
+
+# Setear atributos
+class A(object):
+	attr = 'kkkk'
+
+print A.attr
+>>> 'kkkk'
+
+A.nombre = 'paco'
+A.attr = 'otro valor'
+print A.attr
+>>>'otro valor'
+
+print A.nombre
+'>>> paco'
+
+
+# Constructor
+class A(object):
+	def __init__(self, nombre, alias):
+		self.nombre = nombre
+		self.alias = alias
+
+mi_clase = A('antonio', 'machine')
+print mi_clase.nombre
+>> antonio
+
+print mi_clase.alias
+>> machine
+
+# La clase A no tiene atributo nombre
+print A.nombre
+>>> Traceback (most recent call last):
+>>>  File "<stdin>", line 1, in <module>
+>>> AttributeError: type object 'A' has no attribute 'nombre'
+
+# Objetos de instancia
+class MiClase(object):
+	i = 10
+	def mi_metodo(self):
+		print 'Soy un metodo feliz'
+		
+miclase = MiClase()
+
+# Cuando se trata de una clase, MiClase.mi_metodo es una funcion.
+# Cuando se trata de una instancia, miclase.mi_metodo es un metodo.
+
+# Metodo y funcion son diferentes, el primero es atributo de clase
+# mientras que el segundo es un atributo de objeto
+
+
+# Objetos Metodo
+variable = miclase.mi_metodo
+while True:
+	variable()
+	
+# El anterior codigo pintara la cadena "Soy un metodo feliz" hasta el infinito
+# ATRIBUTOS DE DATOS ----> Tienen preferencia sobre atributos de metodos con igual nombre!!
+
+
+# Metodos y atributos se pueden llamar con self
+class Bolsa:
+    def __init__(self):
+        self.datos = []
+    def agregar(self, x):
+        self.datos.append(x)
+    def dobleagregar(self, x):
+        self.agregar(x)
+        self.agregar(x)

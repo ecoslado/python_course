@@ -1,0 +1,44 @@
+# Buscar una cadena dentro de otra
+import re
+if (re.search("b", "abc")):
+	print "b esta en abc"
+>>> b esta en abc
+
+# Un patron mas complicado
+if (re.search("\Aa[0-9].*(end|fin)$", "a7fin")):
+	print "se ha encontrado el patron"
+>>> se ha encontrado el patron
+
+# Rizando el rizo
+if (re.search("\Aa[0-9].*(end|fin)$", "a2 lo que quiera fin")):
+	print "se ha encontrado el patron"
+>>> se ha encontrado el patron
+
+
+# Las expresiones son case sensitive, se puede pasar flags
+# para modificar el comportamiento
+pattern = re.compile('H', re.IGNORECASE)
+result = pattern.search('aloha')
+
+# Como el resultado no es None, existe coincidencia
+result == None
+>>> False
+
+
+
+# Tambien podemos partir cadenas con expresiones regulares
+pattern = re.compile('a[bc]')
+text = 'e8acjhf90abcklhd78ac867acaba8'
+pattern.split(text)
+>>> ['e8', 'jhf90', 'cklhd78', '867', '', 'a8']
+
+
+
+# Agrupacion de coincidencias
+pattern = re.compile('(?P<name>.+)\.(?P<extension>.+)')
+result = pattern.match('hello.txt')
+result.group('name')
+>>> 'hello'
+
+result.group('extension')
+>>> 'txt'

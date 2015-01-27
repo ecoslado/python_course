@@ -1,0 +1,83 @@
+# Como se hereda, sintaxis
+class ClaseDerivada(ClaseBase):
+	<declaracion-1>
+	.
+	.
+	.
+	<declaracion-N>
+
+# Se permiten expresiones como la siguiente
+# si la clase se encuentra dentro de un modulo
+class ClaseDerivada(modulo.ClaseBase):
+
+# La definicion sigue un enfoque ascendente,
+# Si un metodo no se encuentra, se sigue buscando por la clase base
+# Este procedimiento es recursivo, si la clase base tambien hereda de otra
+class Clase_base(object):
+	def foo(self):
+		print "Soy la clase base"
+
+class Clase_base_lvl2(Clase_base):
+	def bar(self):
+		print "Soy un grillo"
+
+class Clase_derivada(Clase_base_lvl2):
+	def foo(self):
+		print "Soy la clase derivada"
+		
+clase = Clase_derivada()
+clase.foo()
+>>> Soy la clase derivada
+
+clase.bar()
+>>> Soy un grillo
+
+# True si es de la clase o deriva de ella
+isinstance(clase, Clase_base_lvl2)
+>>> True
+
+# True si Clase_derivada deriva de Clase_base_lvl2
+issubclass(Clase_derivada, Clase_base_lvl2)
+>>> True
+
+issubclass(Clase_base, Clase_base_lvl2)
+>>> False
+
+# Devuelve la clase a la que pertenece clase ("la mas baja")
+type(clase)
+>>>> <class '__main__.Clase_derivada'>
+
+
+
+# HERENCIA MULTIPLE
+class ClaseDerivada(Base1, Base2, Base3):
+    <declaracion-1>
+    .
+    .
+    .
+    <declaracion-N>
+
+"""
+	En las clases al viejo estilo el metodo de resolucion 
+	de depencencias que se sigue es:
+
+	Izquierda, arriba
+	Siguiente derecha, arriba,
+	...
+	Ultima, arriba
+	
+	Si se hiciera izquierda -> derecha y luego arriba se presentan problemas
+
+	
+	En las clases al nuevo estilo (heredan de object)
+	el metodo de resolucion de que es diferente:
+	
+	Se basa en algoritmo:
+		C3 superclass linearization
+		https://www.python.org/download/releases/2.3/mro/     (not intended for newbies!!!)
+	
+	Se soportan llamadas cooperativas al metodo super
+	Solventa el problema de llegar por multiples caminos a la base object
+"""
+
+
