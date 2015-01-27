@@ -14,7 +14,7 @@ foo = long_function_name(
   var_three, var_four)
 
 
-# Añadir indentacion extra en una condición larga
+# Indentacion extra en una condicion larga
 # Si se tabula a 4 espacios, coincide con la siguiente
 # linea del cuerpo y visualmente confunde
 if (var_four
@@ -65,11 +65,10 @@ from subprocess import Popen, PIPE
 
 
 # Absoluto mejor que relativo
-"""
 import mypkg.sibling
 from mypkg import sibling
 from mypkg.sibling import example
-"""
+
 
 # Evitar importar con wildcards
 
@@ -106,4 +105,11 @@ CapitalizedWords (or CapWords, or CamelCase -- so named because of the bumpy loo
 Note: When using abbreviations in CapWords, capitalize all the letters of the abbreviation. Thus HTTPServerError is better than HttpServerError.
 
 mixedCase (differs from CapitalizedWords by initial lowercase character!)
+
+
+
+PEP 8:
+https://www.python.org/dev/peps/pep-0008/
+
+
 """

@@ -1,0 +1,67 @@
+from ftplib import FTP
+ftp = FTP('ftp.debian.org')     # connect to host, default port
+ftp.login()                     # user anonymous, passwd anonymous@
+>>> '230 Login successful.'
+
+ftp.cwd('debian')               # change into "debian" directory
+ftp.retrlines('LIST')           # list directory contents
+>>> -rw-rw-r--    1 1176     1176         1063 Jun 15 10:18 README
+>>> ...
+>>> drwxr-sr-x    5 1176     1176         4096 Dec 19  2000 pool
+>>> drwxr-sr-x    4 1176     1176         4096 Nov 17  2008 project
+>>> drwxr-xr-x    3 1176     1176         4096 Oct 10  2012 tools
+>>> '226 Directory send OK.'
+
+ftp.retrbinary('RETR README', open('README', 'wb').write)
+>>> '226 Transfer complete.'
+
+ftp.quit()
+
+
+
+# FTP con TLS
+# Subclase que aporta seguridad a la conexion ftp
+#
+#
+# Se debe habilitar la proteccion manualmente, para ello:
+# FTP_TLS.prot_p()
+#   Set up secure data connection.
+#
+# FTP_TLS.prot_c()
+#	Set up clear text data connection.
+
+
+from ftplib import FTP_TLS
+ftps = FTP_TLS('ftp.python.org')
+ftps.login()           # login anonymously before securing control channel
+ftps.prot_p()          # switch to secure data connection
+ftps.retrlines('LIST') # list directory content securely
+>>> total 9
+>>> drwxr-xr-x   8 root     wheel        1024 Jan  3  1994 .
+>>> drwxr-xr-x   8 root     wheel        1024 Jan  3  1994 ..
+>>> drwxr-xr-x   2 root     wheel        1024 Jan  3  1994 bin
+>>> drwxr-xr-x   2 root     wheel        1024 Jan  3  1994 etc
+>>> d-wxrwxr-x   2 ftp      wheel        1024 Sep  5 13:43 incoming
+>>> drwxr-xr-x   2 root     wheel        1024 Nov 17  1993 lib
+>>> drwxr-xr-x   6 1094     wheel        1024 Sep 13 19:07 pub
+>>> drwxr-xr-x   3 root     wheel        1024 Jan  3  1994 usr
+>>> -rw-r--r--   1 root     root          312 Aug  1  1994 welcome.msg
+>>> '226 Transfer complete.'
+
+ftps.quit()
+
+"""
+Algunos metodos:
+
+FTP.set_debuglevel(level)
+
+FTP.connect(host[, port[, timeout]])
+
+FTP.login([user[, passwd[, acct]]])
+ 
+FTP.dir(argument[, ...])
+ 
+FTP.quit()
+ 
+FTP.close()
+"""

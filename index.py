@@ -255,8 +255,32 @@ index = [
                 "example": "mapreduce"
             }
         ]
+    },
+    {
+        "title": "Buenas practicas",
+        "items": [
+            {
+                "title": "Buenas practicas",
+                "chapter": "guia_estilo",
+                "example": "pep8"
+            }
+        ]
+    },
+    {
+        "title": "Recursos remotos",
+        "items": [
+            {
+                "title": "HTTP",
+                "chapter": "recursos_red",
+                "example": "acceso_http"
+            },
+            {
+                "title": "FTP",
+                "chapter": "recursos_red",
+                "example": "acceso_ftp"
+            }
+        ]
     }
-
 ]
 
 
