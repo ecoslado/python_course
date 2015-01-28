@@ -6,4 +6,7 @@ class SpecialProduct(AbstractProduct):
     def vat(self):
         return self.price * 0.60
 
+    def final_price(self):
+        pass
+
 special_product = SpecialProduct(name="A product", sku="AP-2332929", price=3000.23)

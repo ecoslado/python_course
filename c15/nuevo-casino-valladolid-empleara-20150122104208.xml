@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<elemento type="Noticia" zone="" id="30.10.1004222606" template="/SysConfig/Plantillas/articulo-general-2014.xml" item-template="">
+	<info>
+		<sys>
+<dbid>51</dbid>
+<loid>30.10.1004222606</loid>
+<uuid>05fb6b52-a6be-11e4-8ff2-244270337368</uuid>
+<path>/el_norte/noticias/201501/28/local/valladolid/CASINO.xml</path>
+<url>http://www.elnortedecastilla.es/valladolid/201501/28/nuevo-casino-valladolid-empleara-20150122104208.html</url>
+<name>CASINO.xml</name>
+<description/>
+<type>EOM::CompoundStory</type>
+<owner>RAlonso_NOR</owner>
+<creator>RAlonso_NOR</creator>
+<timeCreated>1422429580</timeCreated>
+<lastModifier>RAlonso_NOR</lastModifier>
+<timeModified>1422429673</timeModified>
+<fechaBuscador>1422429673</fechaBuscador>
+<locker>RAlonso_NOR</locker>
+<timeLocked>1422429614</timeLocked>
+<statusName/>
+<statusIdentifier/>
+<size>18667</size>
+<updateCounter>28</updateCounter>
+<props>
+<templateName>/SysConfig/Plantillas/articulo-general-2014.xml</templateName>
+<workFolder>/Norte Castilla/Noticias/local/valladolid</workFolder>
+<productInfo>
+<name>Norte Castilla</name>
+<issueDate>20150122</issueDate>
+</productInfo>
+<urlpreview/>
+</props>
+<tl/>
+<va>
+<corrs/>
+<folder_size>0</folder_size>
+<corrs/>
+<vid>1</vid>
+<vt>1422429672</vt>
+</va>
+</sys><Metadata>
+<General>
+<webtype>Noticia</webtype>
+<Metas>
+<Titulo>El nuevo casino de Valladolid empleará a 101 personas</Titulo>
+<Title>El nuevo casino de Valladolid empleará a 101 personas</Title>
+<Description>El ‘hagan juego, señores’ será prácticamente continuo. Desde las once de la mañana, con la apertura de una gran sala de máquinas tragaperras con más de cuarenta aparatos de última generación, juegos variados y una barra donde pedirse un trago para aliviar la tensión, y hasta las cuatro o seis de la madrugada –dependiendo si es día de labor o festivo– con una larguísima jornada vespertina donde se abrirá la oferta clásica de ruleta, black jack o póker, entre otras propuestas. El Ayuntamiento de Valladolid está ultimando la tramitación de las licencias ambiental y de obras para convertir el antiguo cine Roxy, en el número 20 de la calle María de Molina, en el Casino de Castilla y León. Fuentes municipales confirman que la intención es concluir este proceso en febrero con el objetivo de que los operarios puedan entrar de inmediato para iniciar unos trabajos, que se prolongarán durante catorce meses. El presupuesto de la obra civil asciende a 812.833 euros, una partida a la que habrá que añadir un amueblamiento que se quiere de primera calidad.</Description>
+<Cintillo/>
+<KeyWords>nuevo, casino, valladolid, empleara, personas</KeyWords>
+<TagsRelacionados>nuevo, casino, valladolid, empleara, personas</TagsRelacionados>
+<Index-noindex>index-follow</Index-noindex>
+<Canonical/>
+<FechaPrimeraPublicacion>20150128072113</FechaPrimeraPublicacion>
+<Idioma>es</Idioma>
+</Metas>
+<autor>RAlonso_NOR</autor>
+<genero>estandar</genero>
+<fecha>ultima_modificacion</fecha>
+<categoria>
+<principal>valladolid</principal>
+<secundaria/>
+</categoria>
+<Origen>Methode</Origen>
+<Marcador>
+<Manual>
+<Equipo_Local/>
+<Marcador_Local/>
+<Marcador_Visitante/>
+<Equipo_Visitante/>
+<Url/>
+</Manual>
+<Automatico>
+<Deporte/>
+<PopMarcador/>
+</Automatico>
+</Marcador>
+<Especiales>
+<TipoEspecial/>
+<CategoriaExtendida/>
+<CategoriaExtendida2/>
+</Especiales>
+<AnadirEnlaces>Si</AnadirEnlaces>
+<topics>
+<topic id="4f193d245813a" type="geographic" url="valladolid">Valladolid</topic>
+<topics-required>si</topics-required>
+</topics>
+<destination>el_norte</destination>
+<PayWall>
+<Meter>Yes</Meter>
+<Premium>No</Premium>
+</PayWall>
+</General>
+<Publicacion>
+<Sindicacion>Si</Sindicacion>
+<Comentarios>el_norte</Comentarios>
+<PortalDestino>el_norte</PortalDestino>
+<EnvioPaginaWeb>
+<Nivel1/>
+<Nivel2>Noticia1</Nivel2>
+<Nivel3/>
+</EnvioPaginaWeb>
+<PaginaWeb>/el_norte/local/valladolid/valladolid.dwp#zona-ab-1</PaginaWeb>
+<url>nuevo-casino-valladolid-empleara-20150122104208</url>
+<Publicacion_Programada>
+<Inicio/>
+<Fin/>
+<Posicion/>
+<Frecuencia/>
+</Publicacion_Programada>
+</Publicacion>
+</Metadata>
+<comscore>
+	<voc_se>valladolid</voc_se>
+	<voc_s1></voc_s1>
+	<voc_s2></voc_s2>
+	<voc_s3></voc_s3>
+	<voc_s4></voc_s4>
+	<voc_site>elnortedecastilla</voc_site>
+	<voc_ho></voc_ho>
+	<voc_ed></voc_ed>
+	<voc_pr>1</voc_pr>
+	<voc_pl></voc_pl>
+	<voc_pu></voc_pu>
+	<voc_usrid></voc_usrid>
+	<voc_tusr></voc_tusr>
+	<voc_ate>local</voc_ate>
+	<voc_tn>el-nuevo-casino-de-valladolid-empleara-a-101-personas</voc_tn>
+	<voc_tc>noticia</voc_tc>
+	<voc_au>j-asua</voc_au>
+	<voc_fep>20150128082113</voc_fep>
+	<voc_fem></voc_fem>
+	<voc_or>rl</voc_or>
+	<oas_sitepage>/4900/vocento.nortecastilla/local//valladolid</oas_sitepage>
+</comscore><canonical>http://www.elnortedecastilla.es/valladolid/201501/28/nuevo-casino-valladolid-empleara-20150122104208.html</canonical>
+		<alternate>http://m.elnortedecastilla.es/valladolid/201501/28/nuevo-casino-valladolid-empleara-20150122104208.html</alternate>
+		<edicion></edicion>
+		<medio>ME</medio>
+	</info>
+	<doc>
+		<lead class="r2014" id="U3010803390506k5B">
+<photo-container class="photo-vertical s320x378">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--320x378.jpg" height="378" id="U3010803390506t5D" vspace="1" width="320">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-vertical s195x230">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--320x378.jpg" height="230" id="U3010803390506eAC" vspace="1" width="195">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-vertical s150x177">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--320x378.jpg" height="177" id="U3010803390506RX" vspace="1" width="150">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-vertical s235x277">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--320x378.jpg" height="277" id="U3010803390506lM" vspace="1" width="235">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-square s235x235">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--235x235.jpg" height="235" id="U3010803390506LiC" vspace="1" width="235">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-square s160x160">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--235x235.jpg" height="160" id="U3010803390506wXB" vspace="1" width="160">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-square s150x150">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--235x235.jpg" height="150" id="U301080339050671G" vspace="1" width="150">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-horizontal s490x275">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--660x371.jpg" height="275" id="U3010803390506rLE" vspace="1" width="490">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<heading/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-horizontal s405x228">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--660x371.jpg" height="228" id="U3010803390506orG" vspace="1" width="405">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<heading/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-horizontal s320x180">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--660x371.jpg" height="180" id="U3010803390506uPD" vspace="1" width="320">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<heading/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-horizontal s235x132">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--660x371.jpg" height="132" id="U3010803390506afB" vspace="1" width="235">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<heading/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<photo-container class="photo-face s100x118">
+<photo fileref="" height="118" id="U3010803390506OXF" vspace="1" width="100"/>
+</photo-container>
+<photo-container class="photo-face s76x90">
+<photo fileref="" height="90" id="U3010803390506hkH" vspace="1" width="76"/>
+</photo-container>
+<photo-container class="photo-other s745x230">
+<photo height="230" id="U3010803390506no" vspace="1" width="745">
+<media/>
+<media-type/>
+</photo>
+<caption class="standard">
+<description/>
+<credit/>
+</caption>
+</photo-container>
+<photo-container class="photo-other s575x323">
+<photo height="323" id="U3010803390506KEC" vspace="1" width="575">
+<media/>
+<media-type/>
+</photo>
+<caption class="standard">
+<description/>
+<credit/>
+<heading/>
+</caption>
+</photo-container>
+<photo-container class="photo-other s1000x350">
+<photo height="350" id="U3010803390506FXF" vspace="1" width="1000">
+<media/>
+<media-type/>
+</photo>
+<caption class="standard">
+<description/>
+<credit/>
+</caption>
+</photo-container>
+<photo-container class="photo-bingdaily s1190x800">
+<photo height="800" id="U30108033905066zE" vspace="1" width="1190">
+<media/>
+<media-type/>
+</photo>
+</photo-container>
+<photo-container class="photo-other s100x100">
+<photo height="100" id="U3010803390506i6B" vspace="1" width="100">
+<media/>
+<media-type/>
+</photo>
+<caption class="standard">
+<description/>
+<credit/>
+</caption>
+</photo-container>
+<photo-container class="photo-horizontal s300x169">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--660x371.jpg" height="169" id="U3010803390506YLH" vspace="1" width="300">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<heading/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<overhead/>
+<headline>El nuevo casino de Valladolid empleará a 101 personas</headline>
+<promo>
+<photo height="30" id="U30108033905069TH" vspace="1" width="160"/>
+<url/>
+</promo>
+<byline>
+<locator><![CDATA[]]></locator>
+<author>
+<id>513</id>
+<column/>
+<name><![CDATA[J. Asua]]></name>
+<location/>
+<description/>
+<twiter/>
+</author>
+</byline>
+<subhead-group>
+<subhead>La obra empezará en febrero, en cuanto el Ayuntamiento conceda las licencias</subhead>
+</subhead-group>
+<photo-container class="photo-horizontal s660x371">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--660x371.jpg" height="371" id="U3010803390506EYE" vspace="1" width="660">
+<media/>
+<media-type/>
+</photo>
+<caption class="">
+<heading/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre.</description>
+<credit>G.- Villamil</credit>
+</caption>
+</photo-container>
+<link-container/>
+<subarticles/>
+</lead><story>
+<grouphead>
+<photo-container class="photo-vertical">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--490x578.jpg" height="578" vspace="1" width="490">
+<media/>
+<media-type/>
+</photo>
+<caption class="standard">
+<heading/>
+<title/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre. </description>
+<credit>G. Villamil</credit>
+</caption>
+</photo-container>
+<overhead/>
+<headline>El nuevo casino de Valladolid empleará a 101 personas</headline>
+<subhead-group>
+<heading/>
+<subhead>La obra empezará en febrero, en cuanto el Ayuntamiento conceda las licencias</subhead>
+</subhead-group>
+<byline>
+<locator><![CDATA[]]></locator>
+<author>
+<id>513</id>
+<column/>
+<name><![CDATA[J. Asua]]></name>
+<location/>
+<description/>
+<twiter/>
+</author>
+</byline>
+</grouphead>
+<text><![CDATA[
+<p>El ‘hagan juego, señores’ será prácticamente continuo. Desde las once de la mañana, con la apertura de una gran sala de máquinas tragaperras con más de cuarenta aparatos de última generación, juegos variados y una barra donde pedirse un trago para aliviar la tensión, y hasta las cuatro o seis de la madrugada –dependiendo si es día de labor o festivo– con una larguísima jornada vespertina donde se abrirá la oferta clásica de ruleta, black jack o póker, entre otras propuestas. El Ayuntamiento de Valladolid está ultimando la tramitación de las licencias ambiental y de obras para c<strong>
+<a href="http://www.elnortedecastilla.es/autor/j-asua-513.html?data=eyJpZCI6NTEzLCJub21icmUiOiJKLiIsImFwZWxsaWRvcyI6IkFzdWEiLCJ0ZWxlZm9ubyI6Ijk4MzQxMjEwMCIsImNhbGxlIjpudWxsLCJwb2JsYWNpb24iOm51bGwsImNvZGlnb19wb3N0YWwiOm51bGwsInByb3ZpbmNpYSI6IlZhbGxhZG9saWQiLCJjb3JyZW8iOiJqYXN1YUBlbG5vcnRlZGVjYXN0aWxsYS5lcyIsInR3aXR0ZXIiOm51bGwsImZhY2Vib29rIjpudWxsLCJwaW50ZXJlc3QiOm51bGwsImluc3RhZ3JhbSI6bnVsbCwiZ3BsdXMiOm51bGwsIm1lZGlvX3ByaW5jaXBhbCI6IkVsIE5vcnRlIGRlIENhc3RpbGxhLiBDYXN0aWxsYSB5IExlXHUwMGYzbiIsInRpcG9fZmlybWEiOiJSZWRhY3RvciIsImZvdG8iOiJodHRwOlwvXC93d3cuZWxub3J0ZWRlY2FzdGlsbGEuZXNcL2NvbXVuXC9pbWdcLzIwMTRcL2F1dG9yXC9maXJtYXMtNTM1Zjc0YjQzNjJmYS1mb3RvLmpwZyIsInVybCI6Imh0dHA6XC9cL3d3dy5lbG5vcnRlZGVjYXN0aWxsYS5lc1wvYXV0b3JcL2otYXN1YS01MTMuaHRtbCJ9">onvertir el antiguo cine Roxy, en el número 20 de la calle María de Molina, en el Casino de Castilla y León</a>
+</strong>. Fuentes municipales confirman que la intención es concluir este proceso en febrero con el objetivo de que los operarios puedan entrar de inmediato para iniciar unos trabajos, que se prolongarán durante catorce meses. El presupuesto de la obra civil asciende a 812.833 euros, una partida a la que habrá que añadir un amueblamiento que se quiere de primera calidad.</p>
+<extra class="compFicha2">
+<p class="epigrafe">Los datos</p>
+<photo height="132" width="235"/>
+<p class="cifra"/>
+<h3>
+<a href=""/>
+</h3>
+<p>
+<strong>101 </strong>trabajadores conformarán la plantilla de la futura sala de juegos del Casino de Castilla y León en el edificio del cine Roxy.</p>
+<p>
+<strong>14 </strong>meses es el plazo estimado de ejecución de la rehabilitación del inmueble.</p>
+<p>
+<strong>Oferta hostelera </strong>Contará con un pequeño bar para atender a los clientes de la gran sala de tragaperras, una amplia cafetería en la sala de juego principal y un restaurante de dos tenedores en la primera planta, que solo dará cenas.</p>
+<p>
+<strong>Oferta de juego y ocio </strong>Además de la sala de ruletas y de la destinada a tragaperras, habrá una zona de apuestas deportivas con pantallas de televisión, un ‘póker room’ para torneos y u</p>
+<p>
+<strong>812.833 </strong>euros es el coste estimado de la obra civil para la conversión del edificio en casino. </p>
+</extra>
+<p>De momento, el expediente de la Memoria Ambiental da algunas pistas de cómo será esta nueva oferta de ocio en el corazón de la ciudad, que, sin duda, cambiará la cada vez más muerta vida nocturna de la capital. Según recoge el documento, ahora en exposición pública, este amplio horario de servicio <strong>necesitará de una plantilla de 101 personas para atender de forma exquisita a unos clientes que entran, principalmente, a gastarse el dinero.</strong> Dos personas en el ‘staff’ directivo, 57 especialistas en juego entre crupieres, jefes de mesa o de sector, 14 trabajadores de gestión, otros doce para atender los servicios hosteleros y 17 para otros menesteres conformarán un equipo que trabajará a turnos. Las previsiones de la empresa estiman que los fines de semana las instalaciones recibirán de media quinientos visitantes al día.</p>
+<p class="compLadillo">Recepción y fisonomistas</p>
+<p>El documento permite adivinar también cómo se estructurará este edificio, obra del arquitecto Ramón Pérez Lozana y levantado entre los años 1935 y 1936, del que <strong>se respetará la fachada protegida, así como elementos catalogados del interior. </strong>En principio, se pretende la entrada de los clientes a ras de calle eliminando el actual vestíbulo abierto a la vía pública donde hasta ahora colgaban las carteleras y daba servicio la taquilla del cine. En esta entrada se situará la recepción del casino y trabajarán los fisonomistas, encargados de controlar a los tramposos profesionales –los burlangas– o a las personas registradas en las listas negras del juego. En esta planta se abrirá una gran sala de máquinas de azar que tendrá un bar de apoyo para dar servicio a los aficionados a los artefactos del azar. Desde las once de la mañana, este espacio, donde se situará también la caja y el búnker para guardar la recaudación, permanecerá abierto.</p>
+<p>Será a las cuatro de la tarde cuando entre en servicio el gran patio de juego, también situado en la planta baja. Se pretende crear un espacio diáfano donde ahora está ubicada la sala de cine principal, que albergará las ruletas americanas, mesas de black jack y de póker. Al fondo, donde colgaba la pantalla, se habilitará un completo bar-cafetería para atender a los apostantes y sobre su techo, ya en el piso primero, se ubicará un gran restaurante de dos tenedores con capacidad para 35 comensales, que solo dará cenas, ya que la empresa no tiene intención de quitar mercado a los establecimientos del entorno, sino ser un complemento de la oferta de ocio. En esa primera planta, que hará balconada y permitirá observar el movimiento de la sala principal, se ubicará la oferta complementaria. </p>
+<p>Además del comedor, habrá lo que los expertos denominan un ‘corner’, una sala de apuestas deportivas con pantallas de televisión para seguir los partidos en directo y arriesgar con los resultados. En este piso también se abrirá espacio para una sala de espectáculos con el objetivo de celebrar presentaciones, eventos y actuaciones, así como un ‘póker room’, un espacio reservado para los torneos de este juego de naipes, que el casino pretende organizar de forma habitual. La oferta suma dos amplias salones de estar para los clientes se relajen entre apuesta y apuesta leyendo o tomando un refrigerio. </p>]]></text>
+<multimedia>
+<photo-container class="photo-vertical">
+<photo fileref="http://www.elnortedecastilla.es/noticias/201501/22/media/cortadas/casino--490x578.jpg" height="578" vspace="1" width="490">
+<media/>
+<media-type/>
+</photo>
+<caption class="standard">
+<heading/>
+<title/>
+<description>Fachada de los antiguos cines Roxy antes de su cierre. </description>
+<credit>G. Villamil</credit>
+</caption>
+</photo-container>
+</multimedia>
+</story>
+</doc>
+</elemento>

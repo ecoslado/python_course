@@ -11,7 +11,7 @@ import numpy
 import math
 
 
-
+"""
 print(math.pi, 'from the math module')
 print(numpy.pi, 'from the numpy package')
 
@@ -51,7 +51,7 @@ def outer():
 outer()
 
 a_var = 'global variable'
-
+"""
 # LEGB
 def len(in_var):
     print('called my len() function')

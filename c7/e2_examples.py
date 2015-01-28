@@ -15,12 +15,16 @@ def main():
 
     except KeyError as e:
         print "This province or city does not exist. %s" % repr(e)
+	return
 
     except IndexError as e:
         print "There's no city for that position. %s" % repr(e)
 
     except Exception as e:
         print "Woops. There was a problem. %s" % repr(e)
+
+    finally:
+        print "Finalmente"
 
 if __name__ == "__main__":
     main()

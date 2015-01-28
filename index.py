@@ -266,6 +266,22 @@ index = [
             }
         ]
     },
+     {
+        "title": "Serializing",
+        "items": [
+            {
+                "title": "Simplejson Package",
+                "chapter": "serializers",
+                "example": "simplejson"
+            },
+            {
+                "title": "LXML",
+                "chapter": "serializers",
+                "example": "lxml"
+            }
+        ]
+    },
+
     {
         "title": "Recursos remotos",
         "items": [
