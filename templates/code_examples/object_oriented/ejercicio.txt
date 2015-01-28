@@ -78,7 +78,7 @@ print type(lector)
 >>> <class '__main__.Lee_string'>
 
 print isinstance(lector, Lee_fichero)
->>> Flase
+>>> False
 
 print isinstance(lector, Lee_lineas)
 >>> True
