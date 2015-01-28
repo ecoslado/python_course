@@ -4,11 +4,11 @@ import socket
 from urllib2 import Request, urlopen, URLError, HTTPError
 
 
-def acceso_ftp():
+def acceso_http():
     # La forma mas simple de usar urllib2
     response = urllib2.urlopen('http://www.abc.es')
     html = response.read()
-    print html
+    print "BASIC: %s" % html[:100]
     
     
     # urllib2 maneja el concepto de peticion (request)
@@ -16,7 +16,7 @@ def acceso_ftp():
     req = urllib2.Request('http://www.abc.es')
     response = urllib2.urlopen(req)
     the_page = response.read()
-    print the_page
+    print "CON REQUEST %s" % the_page[:100]
     
     
     # Tambien podemos acceder a un ftp
@@ -29,13 +29,13 @@ def acceso_ftp():
     data['location'] = 'Northampton'
     data['language'] = 'Python'
     data = urllib.urlencode(data)
-    print data  # The order may differ. 
+    print "Encoded data %s" % data  # The order may differ. 
     
-    url = 'http://www.example.com/example.cgi'
+    url = 'http://www.abc.es'
     full_url = url + '?' + data
     response = urllib2.urlopen(full_url)
     the_page = response.read()
-    print the_page
+    print "GET %s" % the_page[:100]
     
     # POST
     data = {}
@@ -44,10 +44,12 @@ def acceso_ftp():
     data['language'] = 'Python'
     data = urllib.urlencode(data)
     
-    url = 'http://www.someserver.com/cgi-bin/register.cgi'
+    url = 'http://www.abc.es'
     req = urllib2.Request(url, data)
     response = urllib2.urlopen(req)
     the_page = response.read()
+    print "POST %s" % the_page[:100]
+    
     
     
     # HEADERS
@@ -60,11 +62,11 @@ def acceso_ftp():
     user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
     headers = { 'User-Agent' : user_agent }
     
-    url = 'http://www.someserver.com/cgi-bin/register.cgi'
+    url = 'http://www.abc.es'
     req = urllib2.Request(url, data, headers)
     response = urllib2.urlopen(req)
     the_page = response.read()
-    
+    print "CON HEADERS %s" % the_page[:100]
     
     
     # EXCEPCIONES
@@ -116,7 +118,7 @@ def acceso_ftp():
     socket.setdefaulttimeout(timeout)
 
 def main():
-    acceso_ftp()
+    acceso_http()
     
 if __name__ == "__main__":
     main()

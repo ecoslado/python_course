@@ -280,6 +280,16 @@ index = [
                 "example": "acceso_ftp"
             }
         ]
+    },
+    {
+        "title": "Stream",
+        "items": [
+            {
+                "title": "Stream",
+                "chapter": "streams",
+                "example": "chunks"
+            },
+        ]
     }
 ]
 

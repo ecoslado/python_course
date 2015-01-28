@@ -1,12 +1,16 @@
 from ftplib import FTP
+from ftplib import FTP_TLS
 
 def acceso_ftp():
-    ftp = FTP('ftp.debian.org')     # connect to host, default port
-    ftp.login()                     # user anonymous, passwd anonymous@
-    ftp.cwd('debian')               # change into "debian" directory
-    ftp.retrlines('LIST')           # list directory contents
-    ftp.retrbinary('RETR README', open('README', 'wb').write)
-    ftp.quit()
+    try:
+        ftp = FTP('ftp.debian.org')     # connect to host, default port
+        ftp.login()                     # user anonymous, passwd anonymous@
+        ftp.cwd('debian')               # change into "debian" directory
+        ftp.retrlines('LIST')           # list directory contents
+        ftp.retrbinary('RETR README', open('README', 'wb').write)
+        ftp.quit()
+    except Exception as e:
+        print "Exception using FTP_TLS. Error: %s" % str(e)
     
     
     
@@ -21,13 +25,14 @@ def acceso_ftp():
     # FTP_TLS.prot_c()
     #    Set up clear text data connection.
     
-    
-    from ftplib import FTP_TLS
-    ftps = FTP_TLS('ftp.python.org')
-    ftps.login()           # login anonymously before securing control channel
-    ftps.prot_p()          # switch to secure data connection
-    ftps.retrlines('LIST') # list directory content securely
-    ftps.quit()
+    try:
+        ftps = FTP_TLS('eee.uci.edu')
+        ftps.login()           # login anonymously before securing control channel
+        ftps.prot_p()          # switch to secure data connection
+        ftps.retrlines('LIST') # list directory content securely
+        ftps.quit()
+    except Exception as e:
+        print "Exception using FTP_TLS. Error: %s" % str(e)
     
     """
     Algunos metodos:
