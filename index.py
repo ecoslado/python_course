@@ -270,7 +270,12 @@ index = [
         "title": "Serializing",
         "items": [
             {
-                "title": "Simplejson Package",
+                "title": "Python Logging",
+                "chapter": "serializers",
+                "example": "logger"
+            },
+            {
+                "title": "SimpleJson Package",
                 "chapter": "serializers",
                 "example": "simplejson"
             },
@@ -278,6 +283,11 @@ index = [
                 "title": "LXML",
                 "chapter": "serializers",
                 "example": "lxml"
+            },
+            {
+                "title": "BeautifulSoup (HTML)",
+                "chapter": "serializers",
+                "example": "beautiful_soup"
             }
         ]
     },
